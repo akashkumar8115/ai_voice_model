@@ -1,6 +1,57 @@
-speechrecognition
-pyttsx3
-pyaudio; platform_system=="Windows"
-PyAudio==0.2.11; platform_system=="Linux"
-requests
-beautifulsoup4
+
+# AI Voice Assistant - Production Level
+# Requirements.txt
+
+# Core Speech Recognition and TTS
+SpeechRecognition>=3.10.0
+pyttsx3>=2.90
+gTTS>=2.3.0
+pygame>=2.1.0
+pydub>=0.25.1
+
+# Enhanced Audio Processing
+webrtcvad>=2.0.10
+pyaudio>=0.2.11
+
+# Web and HTTP
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+urllib3>=1.26.0
+
+# System and Process Management
+psutil>=5.9.0
+
+# Data Processing
+fuzzywuzzy>=0.18.0
+python-Levenshtein>=0.20.0
+difflib2>=0.1.0
+
+# AI and Language Processing
+openai>=0.27.0
+wolframalpha>=5.0.0
+wikipedia>=1.4.0
+
+# Azure Speech Services (Optional but recommended)
+azure-cognitiveservices-speech>=1.24.0
+
+# Email and Communication
+secure-smtplib>=0.1.1
+
+# Configuration and Utilities
+python-dotenv>=0.19.0
+colorama>=0.4.6
+rich>=12.0.0
+
+# Development and Testing
+pytest>=7.1.0
+pytest-asyncio>=0.21.0
+black>=22.0.0
+flake8>=5.0.0
+
+# Optional Performance Enhancements
+numba>=0.56.0
+numpy>=1.21.0
+
+# GUI (Optional for future development)
+tkinter>=8.6  # Usually comes with Python
+PyQt5>=5.15.0  # Optional

@@ -1,29 +1,121 @@
 {
+  "version": "2.0",
   "applications": {
     "chrome": {
-      "windows": "C:/Program Files/Google/Chrome/Application/chrome.exe",
-      "linux": "/usr/bin/google-chrome-stable"
+      "windows": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "linux": "google-chrome",
+      "darwin": "/Applications/Google Chrome.app"
     },
-    "vs code": {
-      "windows": "C:/Users/USERNAME/AppData/Local/Programs/Microsoft VS Code/Code.exe",
-      "linux": "/usr/bin/code"
+    "firefox": {
+      "windows": "C:\\Program Files\\Mozilla Firefox\\firefox.exe", 
+      "linux": "firefox",
+      "darwin": "/Applications/Firefox.app"
     },
     "notepad": {
-      "windows": "notepad.exe"
+      "windows": "notepad.exe",
+      "linux": "gedit", 
+      "darwin": "/Applications/TextEdit.app"
+    },
+    "calculator": {
+      "windows": "calc.exe",
+      "linux": "gnome-calculator",
+      "darwin": "/Applications/Calculator.app"
+    },
+    "file_manager": {
+      "windows": "explorer.exe",
+      "linux": "nautilus",
+      "darwin": "/System/Library/CoreServices/Finder.app"
+    },
+    "terminal": {
+      "windows": "cmd.exe",
+      "linux": "gnome-terminal", 
+      "darwin": "/Applications/Terminal.app"
+    },
+    "vscode": {
+      "windows": "C:\\Users\\{username}\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+      "linux": "code",
+      "darwin": "/Applications/Visual Studio Code.app"
     },
     "spotify": {
-      "windows": "spotify",
-      "linux": "/usr/bin/spotify"
+      "windows": "C:\\Users\\{username}\\AppData\\Roaming\\Spotify\\Spotify.exe",
+      "linux": "spotify",
+      "darwin": "/Applications/Spotify.app"
+    },
+    "steam": {
+      "windows": "C:\\Program Files (x86)\\Steam\\steam.exe",
+      "linux": "steam",
+      "darwin": "/Applications/Steam.app"
+    },
+    "discord": {
+      "windows": "C:\\Users\\{username}\\AppData\\Local\\Discord\\Update.exe",
+      "linux": "discord",
+      "darwin": "/Applications/Discord.app"
+    },
+    "zoom": {
+      "windows": "C:\\Users\\{username}\\AppData\\Roaming\\Zoom\\bin\\Zoom.exe",
+      "linux": "zoom",
+      "darwin": "/Applications/zoom.us.app"
+    },
+    "photoshop": {
+      "windows": "C:\\Program Files\\Adobe\\Adobe Photoshop 2023\\Photoshop.exe",
+      "darwin": "/Applications/Adobe Photoshop 2023/Adobe Photoshop 2023.app"
+    },
+    "word": {
+      "windows": "C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE",
+      "darwin": "/Applications/Microsoft Word.app"
+    },
+    "excel": {
+      "windows": "C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE", 
+      "darwin": "/Applications/Microsoft Excel.app"
+    },
+    "powerpoint": {
+      "windows": "C:\\Program Files\\Microsoft Office\\root\\Office16\\POWERPNT.EXE",
+      "darwin": "/Applications/Microsoft PowerPoint.app"
     }
   },
   "websites": {
-    "gmail": "https://mail.google.com",
-    "youtube": "https://www.youtube.com",
     "google": "https://www.google.com",
-    "github": "https://github.com"
+    "youtube": "https://www.youtube.com", 
+    "github": "https://www.github.com",
+    "stackoverflow": "https://stackoverflow.com",
+    "reddit": "https://www.reddit.com",
+    "gmail": "https://mail.google.com",
+    "drive": "https://drive.google.com", 
+    "netflix": "https://www.netflix.com",
+    "amazon": "https://www.amazon.com",
+    "weather": "https://weather.com",
+    "news": "https://news.google.com",
+    "maps": "https://maps.google.com",
+    "linkedin": "https://www.linkedin.com",
+    "twitter": "https://www.twitter.com",
+    "facebook": "https://www.facebook.com",
+    "instagram": "https://www.instagram.com",
+    "whatsapp": "https://web.whatsapp.com",
+    "telegram": "https://web.telegram.org",
+    "discord_web": "https://discord.com/app",
+    "chatgpt": "https://chat.openai.com",
+    "claude": "https://claude.ai",
+    "stackoverflow": "https://stackoverflow.com",
+    "w3schools": "https://www.w3schools.com",
+    "mdn": "https://developer.mozilla.org",
+    "devdocs": "https://devdocs.io"
   },
-  "gmail": {
-    "email": "your_email@gmail.com",
-    "app_password": "your_app_password"
+  "voice_settings": {
+    "engine": "pyttsx3",
+    "rate": 165,
+    "volume": 0.9,
+    "voice_id": null,
+    "backup_engines": ["gtts", "azure"],
+    "speech_quality": "high"
+  },
+  "recognition_settings": {
+    "energy_threshold":" 300",
+    "dynamic_energy_adjustment_ratio": 1.5,
+    "pause_threshold": 0.8,
+    "operation_timeout": 5,
+    "phrase_time_limit": 10,
+    "recognition_engine": "google",
+    "backup_engines": ["sphinx", "azure"],
+    "language": "en-US"
   }
 }
