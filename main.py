@@ -1,7 +1,7 @@
 import time
 from voice_input import listen_command
 from tts import speak
-from actions import handle_command
+from actions import handle_command, google_search
 
 def main():
     speak("Jarvis is online and listening.")
@@ -10,7 +10,10 @@ def main():
         if command:
             handled = handle_command(command)
             if not handled:
-                speak("I didn't catch that. Could you please repeat?")
+                speak("I'm not sure how to help with that. Would you like me to search for it?")
+                response = listen_command()
+                if response and "yes" in response.lower():
+                    google_search(command)
         # If no command detected, silently continue (no repeated error)
         time.sleep(0.2)  # Small sleep to reduce CPU usage
 

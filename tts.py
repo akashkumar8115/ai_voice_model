@@ -12,20 +12,27 @@ def _get_engine():
         _engine = pyttsx3.init()
         # Set female voice if available
         voices = _engine.getProperty('voices')
+        print("Available voices:")
+        for voice in voices:
+            print(f" - {voice.name} ({voice.id})")
+
         female_voice = None
         for v in voices:
             # Many platforms mark female with 'female', Windows with 'Zira', etc.
             if ('female' in v.name.lower() or 'zira' in v.id.lower() or 'female' in str(v.gender).lower()):
                 female_voice = v.id
                 break
+        
         if female_voice:
+            print(f"Selected female voice: {female_voice}")
             _engine.setProperty('voice', female_voice)
+        else:
+            print("No female voice found, using default.")
+
         _voice_set = True
         # Optional: Tweak properties
-        if platform.system() == 'Windows':
-            _engine.setProperty('rate', 165)
-        else:
-            _engine.setProperty('rate', 175)
+        _engine.setProperty('rate', 150) # Slower speech rate
+
     return _engine
 
 def speak(text):
