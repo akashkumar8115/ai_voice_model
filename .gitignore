@@ -1,0 +1,41 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Python related
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Model checkpoints and saved models
+*.h5
+*.pt
+*.ckpt
+/models/
+/checkpoints/
+
+# Data files (if large or sensitive)
+data/
+/datasets/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
