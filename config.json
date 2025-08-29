@@ -1,0 +1,29 @@
+{
+  "applications": {
+    "chrome": {
+      "windows": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+      "linux": "/usr/bin/google-chrome-stable"
+    },
+    "vs code": {
+      "windows": "C:/Users/USERNAME/AppData/Local/Programs/Microsoft VS Code/Code.exe",
+      "linux": "/usr/bin/code"
+    },
+    "notepad": {
+      "windows": "notepad.exe"
+    },
+    "spotify": {
+      "windows": "spotify",
+      "linux": "/usr/bin/spotify"
+    }
+  },
+  "websites": {
+    "gmail": "https://mail.google.com",
+    "youtube": "https://www.youtube.com",
+    "google": "https://www.google.com",
+    "github": "https://github.com"
+  },
+  "gmail": {
+    "email": "your_email@gmail.com",
+    "app_password": "your_app_password"
+  }
+}

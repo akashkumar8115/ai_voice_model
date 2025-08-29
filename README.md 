@@ -1,0 +1,10 @@
+# Jarvis Voice-Controlled Personal Assistant (Python)
+
+## Overview
+This is a cross-platform voice-controlled personal assistant named Jarvis that listens continuously for voice commands and performs system control actions like opening apps, websites, playing YouTube songs, reading Gmail emails, and basic file management.
+
+## Setup Instructions
+
+### 1. Clone the repository or download the project
+
+### 2. Create a Python virtual environment (recommended)

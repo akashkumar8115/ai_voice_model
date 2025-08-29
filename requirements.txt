@@ -1,0 +1,6 @@
+speechrecognition
+pyttsx3
+pyaudio; platform_system=="Windows"
+PyAudio==0.2.11; platform_system=="Linux"
+requests
+beautifulsoup4
