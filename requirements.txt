@@ -1,6 +1,7 @@
-
 # AI Voice Assistant - Production Level
 # Requirements.txt
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
 
 # Core Speech Recognition and TTS
 SpeechRecognition>=3.10.0
@@ -24,7 +25,6 @@ psutil>=5.9.0
 # Data Processing
 fuzzywuzzy>=0.18.0
 python-Levenshtein>=0.20.0
-difflib2>=0.1.0
 
 # AI and Language Processing
 openai>=0.27.0
@@ -49,9 +49,13 @@ black>=22.0.0
 flake8>=5.0.0
 
 # Optional Performance Enhancements
-numba>=0.56.0
-numpy>=1.21.0
+numba==0.59.1
+numpy==1.26.4
 
 # GUI (Optional for future development)
-tkinter>=8.6  # Usually comes with Python
-PyQt5>=5.15.0  # Optional
+# tkinter (install via apt, not pip)
+PyQt5>=5.15.0
+# Build Tools (needed for some packages like webrtcvad)
+setuptools<81
+
+wheel==0.44.0

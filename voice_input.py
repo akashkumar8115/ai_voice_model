@@ -38,7 +38,7 @@ class VoiceInput:
         self.noise_threshold = 0.3
         self.phrase_time_limit = 8
         self.timeout = 1
-        self.energy_threshold = 4000
+        self.energy_threshold = 300  # Lowered threshold for more sensitivity
         self.dynamic_energy_threshold = True
         
         # Command filtering

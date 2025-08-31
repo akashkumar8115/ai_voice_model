@@ -142,6 +142,7 @@ class AIVoiceAssistant:
                     command = self.voice_input.get_command()
                     
                     if command:
+                        self.logger.info(f"Received command from queue: {command}")
                         # Check for wake word or if in conversation
                         if (self.is_wake_word_detected(command) or 
                             self.conversation_manager.is_in_active_conversation()):
